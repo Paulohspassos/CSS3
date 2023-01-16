@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+    </style>
+    <title>Fontes</title>
+</head>
+<body>
+    <h1>Fontes externas</h1>
+    <p>Podemos inserir tipos de fontes diferentes em nossos projetos, fazendo assim com que esse seja exclusivo, para isso existem algumas formas de usar outras fontes extra que não possuem em nosso computador.</p>
+    <p>Para inserir usamos fontes baixadas da internet ou até mesmo fontes que estão disponível em sites proprios que as disponibiliza como o <a href="https://fonts.google.com/knowledge" target="_blank">google fonts</a></p>
+    <p>Essa configuração exige um comando não muito intuitivo porém ao visitar a página temos instruções claras e até mesmo o código prontinho para agregar a fonte desejada ao nosso site.</p>
+    <p>Quando inserimos uma fonte um pouco mais profissional, podemos personaliza-la em diversos detalhes além dos que estamos acostumados, por exemplo, em fontes comuns podemos escolher apenas dois pesos para nossa fonte normal ou bold(negrito), em fontes mais profissionais temos outras configurações para essa característica, temos o light(bem fino), normal(que já conhecemos), bold(negrito) e bolder(nível maior de negrito), e esse peso é configurado em "font-weight: border".</p>
+    <p>Através do parâmetro "font-style: italic;" podemos inserir outras estilizações as nossas fontes.</p>
+    <p>Em "text-decoration: none;" podemos inserir sublinhado ou tirar marcações dos nossos textos.</p>
+    <p>As declarações podem ser condensadas em uma "shorthand" deixando o códiog bem mais enxuto.</p>
+    <p>"font: font-style font-weight font-family;", exemplo, "font: italic bolder 3em 'Arial', san-serif;</p>
+    <h2>Google fonts</h2>
+    <p>Existem duas formas de inserir fontes diferentes em nossos projetos, uma das formas é baixando a fonte e inserir essa fonte que estará baixada em uma pasta determinada no nosso projeto.</p>
+    <p>Para inserir uma fonte sem a necessidade de baixa-la, podemos usar uma fonte que está no site google fonts, ao escolher a fonte deveremos copiar o código de inserção que estará no site do google fonts.</p>
+    <pre>
+        <code>
+            &lt;style&gt;
+                @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+                body {
+                    font-family: 'Raleway', sans-serif;
+                }
+            &lt;/style&gt;
+        </code>
+    </pre>
+    <p>Para se adicionar uma fonte devemos sempre usa o @import seguido da url da fonte e essa instrução não poderá estar dentro de nenhum seletor além de ser as primeiras linhas da folha de estilos.</p>
+    <p>Para se inserir alguma fonte que não exista no google fonts seja ela de outro site pago ou gratuito baixado o procedimento é o seguinte:</p>
+    <ol>
+        <li>Baixe a fontes do site desejado ou que o cliente tenha comprado e guarde-a em uma pasta dentro da pasta do projeto;</li>
+        <li>Insira a fonte à sua pagina usando o seguinte código:</li>
+        <pre>
+            <code>
+                @font-face {
+                    font-family: 'nome_personalizado(opcional)';
+                    src: url('pasta/nome da fonte.ext') format (nome_da_ext);
+                }
+            </code>
+        </pre>
+    </ol>
+    <p>Existem vários sites que disponibilizam fontes gratuitamente.</p>
+    <p>É importante prestar bastante atenção nos glifos de cada fonte para não utilizar fonte que não possui todos os recursos necessário.</p>
+    <p>Existem alguns formatos de fonte e os mais utilizados são ttf(truetype), otf(opentype), embeded-opentype, truetype-aat(Apple Advanced Typography) e svg, de posse dessa informação deveremos inserir exatamente qual o formato utilizado pela fonte.</p>
+    <p>Devemos ficar atentos ao formato que usamos em nosso site pois alguns navegadores podem não reconhecer algum formato, assim, sempre que possível devemos disponibilizar todos os formatos disponíveis.</p>
+</body>
+</html>

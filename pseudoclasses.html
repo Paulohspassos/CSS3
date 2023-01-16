@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div {
+            display: inline-block;/*display: configura o tipo de apresentação do elemento na janela da página nesse caso inline-block que significa que estará fixo em linha, caso a página não acomode o elemento ele será automaticamente inserido à linha abaixo, porém seu real posicionamento é ao lado um do outro.*/
+            background-color: lightgray;
+            border: 1px solid black;/*1º expessura da linha 2º especificação do estilo da linha 3º cor da linha*/
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        div:hover {
+            background-color: yellow;
+        }
+        h2:hover  {
+            color: red;
+        }
+        span > p {
+            display: none;
+        }
+        span:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 200px;
+        }
+        a:visited {
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+    <p>As divs são espaços reservados no código para que se insira outros elementos na nossa página, vem por padrão ocupando toda a largura (width)da página e ocupando a altura (height) necessária para o conteúdo da div e se ajusta almentando ou diminuíndo automáticamente.</p>
+    <p>As pseudo classes deverão estar relacionadas ao estado de um elemento específico ou classe e essa relação diz respeito ao estado desse elemento ou classe como se estão ativos "active", marcado "checked", vazio "empty", habilitado "enabled" entre outros, com isso podemos configurar esse estado.</p>
+    <p>Por exemplo o "hover" (tradução livre, flutuar, passar por cima) que pode ser configurado para mudar o estado ou fazer alguma ação determinada ao passar o mouse por cima de algum elemento, ao passar o mouse por cima do elemento ele mudará de cor nesse exemplo:</p>
+    <pre>
+        <code>
+            div:hover {
+                background-color: yellow;
+            }
+        </code>
+    </pre>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <p>Outro exemplo que podemos mostrar é mudar a cor de um texto ao passar o mouse por cima do texto como no exemplo abaixo.</p>
+    <span>
+        <h2>Passe o mouse aqui.</h2>
+        <p>Texto escondido.</p>
+    </span>
+    <p>Aqui encerra essa página.</p>
+    <p>Outra pseudo classe que podemos usar como exemplo é o ":visited" que altera as propriedades de um link, para personalizar esses elementos por exemplo:</p>
+    <ul>
+        <li><a href="https://www.youtbue.com/" target="_blank">YouTube</a></li>
+        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+    </ul>
+    <p>O código:</p>
+    <pre>
+        <code>
+            a:visited {
+                color: darkred;
+            }
+        </code>
+    </pre>
+    <p>Outra pseudo classe é a ":active" que destaca a cor do link ativo em nossa página.</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática box-model</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            padding: 10px 10px 10px 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        a {
+            border-width: 2px;
+            border-style: dotted;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos são exemplos de caixa box-level, mas os <a href="#">links são exemplo de caixas inline-level</a>. Vamos ver como isso funciona.</p>
+    <p>A configuração CSS "display: block;", é a configuração do box-level</p>
+    <p>Para centralizar uma caixa a melhor maneira de centralizar uma caixa horizontalmente é a seguinte.</p>
+    <pre><code>"margin: auto;"</code></pre>
+    <p>Outline é uma linha que se encontra na area mais externa da nossa borda.</p>
+    <p>Para usar as medidas de forma resumida do padding devemos obedecer a seguinte ordem, 1-top, 2-right, 3-botton, 4-left. Caso queiramos repetir as medidas para todos os lados, basta coloca uma medida, quando colocamos dois valores o primeiro definirá top e botton e o segundo definirá right e left. Essa regra também vale para margin. Lembrando que usar o valor "auto", que define horizontamente os espaços, centralizará no eixo x nosso box.</p>
+    <p>As configurações de altura (height) e largura (width) só podem ser utilizados em caixa (box) que usem display block.</p>
+</body>
+</html>

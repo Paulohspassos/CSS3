@@ -1,0 +1,6 @@
+@charset "utf-8"; /*Isso é uma regra para possíveis acentuações*/
+
+body {
+    background-color: antiquewhite;
+    font: normal 15px Arial;
+}

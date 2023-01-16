@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+    <style>
+        body {
+            
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Psicologia das cores</h1>
+    <p>As cores tem muito mais significado e influência do que imaginamos, é comum vermos uma determinada cor e associa-la a alguma marca ou produto, chegando a até mesmo ser referência para algumas coisas.</p>
+    <p>Para termos um exemplo prático desse fato, podemos observar algumas marcas de tecnologia como intel, facebook, twitter, dell, linkedIn, HP entre outras, utilizam como cor predominante o azul, será isso uma coicidencia ou psicologia de cores? O azul tem uma forte ligação com caracteristicas como competência, sabedoria, calma, confiança, profissionalismo e segurança então vamos estudar um pouco das cores.</p>
+    <p>A escolha da cor certa pode ser determinante para o sucesso ou fracasso de um projeto.</p>
+    <h2>Representação das cores em códigos</h2>
+    <p>Para inserir as mais de 65 bilhões de cores utilizáveis, a melhor forma é pelas folhas de estilo CSS.</p>
+    <p>Podemos utilizar também em instruções inline e interno tabmém.</p>
+    <p>Para representar, dizer, a cor que queremos, usamos o nome propriamente dito, código rgb, código hexadecimal entre outros.</p>
+    <p style="background-color: blue; color: white;">O nome da cor é bem simples porém limitado afinal vamos ter que saber as variações específicas de cada nomenclatura, como no exemplo abaixo:</p>
+    <pre>
+        <code>
+            &lt;p style="background-color: blue; color: white;"&gt;O nome da cor é bem simples porém limitado afinal vamos ter que saber as variações específicas de cada nomenclatura.&lt;/p&gt;
+        </code>
+    </pre>
+    <p style="background-color: rgb(0, 0, 255);color: rgb(255, 255, 255);">Já o código rgb é escolhido através dos níveis de cada cor primária sendo o r = red, g = green e b = blue, a escala vai de 0 à 255 para cada cor.</p>
+    <pre>
+        <code>
+            &lt;p style="background-color: rgb(0, 0, 255);color: rgb(255, 255, 255);"&gt;Já o código rgb é escolhido através dos níveis de cada cor primária sendo o r = red, g = green e b = blue, a escala vai de 0 à 255 para cada cor.&lt;/p&gt;
+        </code>
+    </pre>
+    <p style="background-color: #0000ff; color: #ffffff;">E o código hexadecimal iniciará com um simbolo de # (hastag) e um código alfanumérico que representa a cor desejada, como no exemplo abaixo.</p>
+    <pre>
+        <code>
+            &lt;p style="background-color: #0000ff; color: #ffffff;"&gt;E o código hexadecimal iniciará com um simbolo de # (hastag) e um código alfanumérico que representa a cor desejada.&lt;/p&gt;
+        </code>
+    </pre>
+    <p style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">Temos também a representação pelo código hsl (hue, saturation, lightness), que seria matiz, saturação e luminosidade, como no exemplo abaixo.</p>
+    <pre>
+        <code>
+            &lt;p style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">Temos também a representação pelo código hsl (hue, saturation, lightness), que seria matiz, saturação e luminosidade.&lt;/p>
+        </code>
+    </pre>
+    <p>Além desses parâmetros temos também a transparência pelos códigos rgba, hsla, e no hexadecimal é inserido dois dígitos no final do código.</p>
+    <h2>Degradê</h2>
+    <p>Para se criar um efeito degradê em algum elemento devemos usar a seguinte sintaxe, "background-image: linear-gradient(direção, cor 1, cor 2);", porém, em caso de janelas muito grandes, o gradiente será aplicado em fatias como se fosse um listrado, para evitar isso usamos um seletor global dentro do CSS, o "* { height: 100% }</p>
+    <p></p>
+</body>
+</html>

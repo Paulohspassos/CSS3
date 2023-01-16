@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        a::after {
+            content: '[link]';
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Elementos</h1>
+    <p>Os pseudo elementos são configurações que ajem nas classe, elementos, ids, etc, mexendo no coteúdo periférico do conteúdo.</p>
+    <p>Identificado por "::" e a ação desejada.</p>
+    <p>Exemplo:</p>
+    <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+    </ul>
+    <p>A palavra [Link] não foi inserido no código HTML, foi inserido pelo pseudo elemento.</p>
+    <p>Quando formos selecionar algum elemento que está dentro de outro elemento usamos o simbolo ">" children (filho), assim a configuração estará imposta ao elemento que está dentro de outro.</p>
+</body>
+</html>

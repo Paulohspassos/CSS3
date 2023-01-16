@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipografia</h1>
+    <p>Outro elemento muito importante em uma página bem desenvolvida são as fontes ou tipos, o tipo de fonte utilizado pode deixar a experiência do usuário bem mais confortável, por isso devemos ter bastante atenção a esse elemento.</p>
+    <p>Quando observamos bem a fonte vemos que algumas são mais agradáveis para se ler em determinados meios, como digital ou físico, do que outros, um tipo de letra é melhor para se ler em livros fisicos e outros tipos fica melhor para se ler em telas de tablets ou celulares, uns tipos é melhor para se ler artigo cientificos e outros tipos melhor para se ler uma charge, ou seja, devemos nos atentar ao tipo de fonte que fica melhor para que o usuario alvo tenha a melhor experiência possível.</p>
+    <p>Resumidamente, temos alguns elementos em cada tipo, fonte que favorencem cada finalidade, letras com serifa são projetadas para ser utilizadas impressas em papel, já as fontes san-serif são ideais para telas.</p>
+    <p>A fonte padrão dos navegadores é o Times New Roman.</p>
+    <p>Uma outra caracteristica importante é a fonte monoespaçada, com isso os espaços entre as letras não é influenciada pela letra em si, em fontes sem essa caracteristica algumas letras ocupam espaços diferentes o que pode gerar uma dificuldade à leitura.</p>
+    <h2>Inserindo fontes</h2>
+    <p>Quando queremos dar uma cara mais amigável ao nosso site, utilizamos o CSS para fazê-lo, com a propriedade "font", dessa forma há três forma de inserir esse estilo a nossa página, inline, quando o parâmetro "style" é inserido dentro da tag afetando assim apenas a tag a que está inserida, interno, quando criamos uma tag &lt;style&gt; na tag &lt;head&gt; do nosso documento e externo, por meio de outra folha de código com a extensão ".css" que será anexado por meio da tag &lt;link&gt;.</p>
+    <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Para a insersão inline utilizamos a seguinte sintaxe:</p>
+    <pre>
+        <code>
+            &lt;p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"&gt;Para a insersão inline utilizamos a seguinte sintaxe:&lt;/p&gt;
+        </code>
+    </pre>
+    <p>Para se inserir através de configuração interna, a sintaxe ficará assim:</p>
+    <pre>
+        <code>
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;Tipografia&lt;/title&gt;
+                &lt;style&gt;
+                    body {
+                            font-family: Arial, Helvetica, sans-serif;
+                        }
+                &lt;/style&gt;
+            &lt;/head&gt;
+        </code>
+    </pre>
+    <p>E para inserir de forma externa utilizamos a tag link que ligará a nossa página a uma folha de estilo externa.</p>
+    <pre>
+        <code>
+            &lt;link rel="stylesheet" href="style.css"&gt;
+
+            body {
+                font-family: "san-serif";
+            }
+        </code>
+    </pre>
+    <h2>Tamanhos de fontes</h2>
+    <p>Outra característica importanteda fonte é seu tamanho e suas representação.</p>
+    <p>As unidades de medida principais que podemos usar em nosso código são:</p>
+    <ul>
+        <li>Medidas absolutas</li>
+        <ul>
+            <li>cm</li>
+            <li>mm</li>
+            <li>in</li>
+            <li>px</li>
+            <li>pt</li>
+            <li>pc</li>
+        </ul>
+        <li>Medidas relativas</li>
+        <ul>
+            <li>em</li>
+            <li>ex</li>
+            <li>rem</li>
+            <li>vw</li>
+            <li>vh</li>
+            <li>%</li>
+        </ul>
+    </ul>
+    <p>Os mais recomendados principalmente em se tratando de adaptatividade é usar as medidas, relativa "em" e absoluta "px".</p>
+    <p>A fonte padrão nos navegadores é de 16px que é igual a 1em.</p>
+</body>
+</html>

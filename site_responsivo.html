@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        body {
+            background-color: grey;
+            font-family: sans-serif;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 280px;
+            max-width: 800px;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Site Responsivo</h1>
+        <p>Responsividade nada mais é do que adaptar uma página para varios tamanhos de tela diferentes, para isso os ajustes são feitos no CSS.</p>
+        <p>Um dos recursos mais simples é limitando a largura mínima e máxima. Outra forma é utilizando porcentagem do tamanho da tela nas configurações do CSS, com isso a largura não estará bloqueada a uma medida mas se ajustará automaticamente conforme o tamanho da tela mudar.</p>
+        <picture>
+            <source media="(max-width: 800px)" srcset="imagens/central-park-winter-p.jpg">
+            <img src="imagens/central-park-winter-g.jpg" alt="Central Park Winter">
+        </picture>
+        <p>Lembrando que a melhor maneira de se centralizar um elemento é delimitando uma dimensão de largura e adicionando uma margem com o valor "auto", assim o navegador ira manter o elemento no centro da página em qualquer exibição.</p>
+        <p>Para melhorar a responsividade da nossa página devemos usar os parâmetros "min-width" e "max-width", assim o navegador terá um limite minimo e máximo de largura mantendo a responsividade do site.</p>
+        <p>Para resolver de uma forma simples o width (largura) de fotos podemos usar o parâmetro "img { width:100%;}, assim a imagem será ajustada a janela do navegador.</p>
+        <p>Existem uma forma mais profissional de se tratar imagens em responsividade que é usando varios tamanhos de imagens, é necessário editar as imagens, porém fica mais profissional e elegante usar esse recurso.</p>
+        <p>Para isso devemos ter nossa imagem que estará em uma tag &lt;img&gt; dentro de outra tag, a tag &lt;picture&gt;, assim podemos usar o recurso &lt;source media="(max-width: medida;)" srcset="endereço_da_imagem_com_outra_dimensão/imagem.ext"&gt;, assim a imagem será mudada automaticamente quando detectar uma tela com largura controlada, esse recurso, ao contrario do que foi dito anteriormente é tratado diretamente no documento HTML5 e não no CSS.</p>
+        <p>Um problema que encontramos foi centralizar uma imagem em nosso documento, pois o documento não é "display: block;", para sanar esse problema e centralizar nossas imgens devemos inserir esse parâmetro a uma img.</p>
+    </main>
+</body>
+</html>

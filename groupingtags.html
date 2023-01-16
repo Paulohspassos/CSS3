@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grouping Tags</h1>
+    <p>As tags de agrupamento eram duas, a "div" e "span", hoje essa categoria de grouping tags estão associadas a semântica, ou seja, as tags "header", "main", "nav", "aside", "footer", "section" entre outros, com isso as tags se tornam mais descritivas facilitando assim o entedimento do que é esse elemento dentro do código.</p>
+    <p>Vamos montar um exemplo de organização sem as tags semânticas e com as tags semânticas.</p>
+    <h2>Exemplo de código sem tag semântica</h2>
+    <pre>
+        <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="pt-br"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;Sem tags semânticas&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;div id="header"&gt;
+                    &lt;div id="nav"&gt;
+                        &lt;a href="#"&gt;Link&lt;/a&gt;
+                        &lt;a href="#"&gt;Link&lt;/a&gt;
+                        &lt;a href="#"&gt;Link&lt;/a&gt;
+                        &lt;a href="#"&gt;Link&lt;/a&gt;
+                        &lt;a href="#"&gt;Link&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;div id="main"&gt;
+                &lt;div class="section" id="assuntos"&gt;
+
+
+                &lt;/div&gt;
+                &lt;div class="section" id="noticias"&gt;
+                    &lt;div class="article"&gt;
+                        &lt;div class="aside"&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="article"&gt;
+                        &lt;div class="aside"&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="footer"&gt;
+
+            &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+    <h2>Exemplo de código com tag semântica</h2>
+    <pre>
+        <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="pt-br"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;Com tags semânticas&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;header&gt;
+                    &lt;nav&gt;
+                        &lt;a href="#"&gt;Link&lt;/a&gt;
+                        &lt;a href="#"&gt;Link&lt;/a&gt;
+                        &lt;a href="#"&gt;Link&lt;/a&gt;
+                        &lt;a href="#"&gt;Link&lt;/a&gt;
+                        &lt;a href="#"&gt;Link&lt;/a&gt;
+                    &lt;/nav&gt;
+                &lt;/header&gt;
+            &lt;main&gt;
+                &lt;section id="assuntos"&gt;
+
+
+                &lt;/section&gt;
+                &lt;section id="noticias"&gt;
+                    &lt;article&gt;
+                        &lt;aside&gt;
+
+                        &lt;/aside&gt;
+                    &lt;/article&gt;
+                    &lt;article&gt;
+                        &lt;aside&gt;
+
+                        &lt;/aside&gt;
+                    &lt;/article&gt;
+                &lt;/section&gt;
+            &lt;/main&gt;
+            &lt;footer&gt;
+
+            &lt;/footer&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+    <h2>Sombras</h2>
+    <p>Outro recurso muito interessante que podemos usar para dar mais beleza aos nossos projetos, as sombras dão um ar elegante e uma sensação 3d aos elementos da nossa página.</p>
+    <p>As sombras também utilizam das short-hands.</p>
+    <h3>Box-shadow</h3>
+    <p>Para configurar nossa box-shadow com short-hands os parâmetros são:
+        <ol>
+            <li>Deslocamento Horizontal (valor positivo desloca para a direita e valor negativo desloca para a esquerda)</li>
+            <li>Deslocamento Vertical (valor positivo desloca para baixo e valor negativo desloca para cima</li>
+            <li>Blur</li>
+            <li>Spread</li>
+            <li>Cor da sombra</li>
+        </ol>
+    </p>
+    <p>Existem as sombras externas "outset" e as sombras internas "inset".</p>
+    <p>É possivel insrir sombra em outras tags afinal todas as tags são caixas e podem ter sombras.</p>
+    <h3>Bordas</h3>
+    <p>As bordas também podem ser estilizadas e mudadas de acordo com o gosto do desenvolvedor e podemos fazer essa configuração pelo parâmento "border-radius:", a medida poderá ser em px para melhor controle, o controle short-hands também pode ser usado nesse parâmetro, com isso há a possibilidade de bordas diferentes para cada corner.</p>
+    <h3>Bordas decoradas</h3>
+    <p>Apesar de ser um recurso não muito apreciado pela maioria dos desenvolvedores e clientes, é sempre bom saber.</p>
+    <p>Através do parâmentro "border-image-source: url('pasta/nome_do_arquivo.png'), assim podemos utilizar qualquer imagem como borda de uma box.</p>
+    <p>Para ajustar a imagem podemos usar os parâmetros "border-image-slice:" e "border-image-repeat: repeat;".</p>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Site</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(83, 83, 83);
+            padding: 3px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(138, 135, 135);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+        }
+        footer > p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Assuntos diversos sobre qualquer assunto dentro da section assuntos.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Exemplo de artigo</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, quod! Distinctio delectus aut eligendi, illo illum, officia, eveniet obcaecati totam praesentium tenetur fugiat rem. Excepturi iure iste voluptates quas odio?</p>
+                <aside>
+                    <p>Escrito pelo autor</p>
+                </aside>
+            </article>
+            <article>
+                <p>Outro article com algum artigo de interesse do desenvolvedor.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Paulo Henrique</p>
+    </footer>
+</body>
+</html>

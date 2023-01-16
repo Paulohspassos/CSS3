@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(185, 252, 185);
+    font-family: sans-serif;
+}
+h1 {
+    color: green;
+}
+#principal {
+    text-align: center;
+}
+h2 {
+    color: rgb(4, 56, 4);
+}
+.corpo {
+    background-color: rgb(189, 189, 248);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.basico {
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+}

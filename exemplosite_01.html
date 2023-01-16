@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando estilos</title>
+    <link rel="stylesheet" href="exemplosite.css">
+</head>
+<body>
+    <main>
+        <h1>Site de Exemplo</h1>
+        <p>Vamos criar um exemplo prático de estilização.</p>
+        <h2>Configuração master</h2>
+        <p>Para dar inicio as estilizações da nossa página primeiro devemos "resetar" alguns parâmetros que já vêm pré definidos nos navegadores.</p>
+        <p>Ao criarmos uma página, por padrão o navegador insere um padding(preenchimento) que cria um espaço entre o conteúdo seja texto ou outro elemento e os limites da janela do navegador, porém esse padding pode gerar algum problema na hora de dar um estilo personalizado a nossa página.</p>
+        <p>Para evitar esse problema, podemos iserir em nosso código CSS um seletor "* { padding: 0px; }, assim não haverá nenhum espaço indesejado em nossa página.</p>
+        <p>Outro parâmetro que podemos utilizar é o tipo de fonte (font-family), cor de fundo(background-color), entre outros parâmentros que serão mais gerais a nosso projeto.</p>
+        <h2>O corpo da página</h2>
+        <p>Outra area da nossa página muito importante é o corpo ou "body { background-image:linear-gradient(to right, #F1D8C9, #F2C3A7); }, que nesse caso criará um efeito degradé da esquerda para a direita</p>
+        <p>Esse código pode utilizar quantas cores quisermos para que o efeito seja de acordo com qualquer gosto.</p>
+        <h2>Main ou principal</h2>
+        <p>Neste exemplo que estamos vendo foi aplicado nas configurações de <abbr title="Cascading Style Sheets ou Folhas de Estilo em Cascata">CSS</abbr> os seguintes parâmetros:</p>
+        <pre>
+            <code>
+                main {
+                    background-color: white;
+                    border-radius: 10px;
+                    box-shadow: 5px 5px 15px rgba(136, 109, 93, 0.650);
+                    width: 600px;
+                    padding: 10px;
+                    margin: auto;
+                }
+            </code>
+        </pre>
+        <ul>
+            <li><strong>background-color: white;</strong> (com isso o fundo da caixa permanecerá branco.)</li>
+            <li><strong>border-radius: 10px;</strong> (esse parâmetro deixará os cantos da caixa arredondados de acordo com a medida escolhida.)</li>
+            <li><strong>box-shadow: 5px 5px 15px rgb(136, 109, 93, 0.650);</strong> (nesse parâmentro criamos um sobreamento em nossa caixa da seguindo a ordem da esquerda para a direita:</li>
+            <ol>
+                <li>medida da sombra das laterais em pixels, caso seja positivo a sombra estará a direita da caixa, caso seja negativo estará a esquerda;</li>
+                <li>medida da sombra do topo e base da caixa, caso seja numero positivo estará embaixo, caso seja negativo estará em cima da caixa;</li>
+                <li>medida de espalhamento da sombra, quanto maior o número mais "espalhada" será a sombra;</li>
+                <li>cor da sombra, podemos usar todos os recursos de escolha de cores.</li>
+            </ol>
+            <li><strong>width: 600px;</strong> (essa medida representa a largura da caixa que estará fixada e limitada em 600 pixels.)</li>
+            <li><strong>padding: 10px;</strong> (isso inserirá um espaço entre as palavras ou objetos como imagens e o limite da caixa.)</li>
+            <li><strong>margin: auto;</strong> (que criará uma margem entre a caixa e o elemento pai, ou o corpo (body).)</li>
+        </ul>
+        <h2>Texto</h2>
+        <p>Nas tags h1, h2, h3... estamos utilizando seletores personalizados para cada elemento, para isso basta criar o seletor referente ao elemento como:</p>
+        <pre>
+            <code>
+                h1 {
+                    color: #F39209;
+                    text-align: center;
+                    text-shadow: 1px 1px 2px rgba(129, 77, 5, 0.75);
+                }
+            </code>
+        </pre>
+        <h2>Parágrafos</h2>
+        <p>Neste caso utilizamos o seletor p { text-align: justify; } para que o texto fique justificado na janela da página.</p>
+        <p>Além desse parâmetro, podemos utilizar qualquer outro para que nossa página fique de acordo com o gosto do contratante.</p>
+        <p>Para exemplificar o uso de gradiente (degradé) vamos inserir uma box com o background em greadiente, o código estará logo abaixo.</p>
+        <div id="box"></div>
+        <p>Foi criado uma div simples com o id="box" e as configuração css abaixo.</p>
+        <pre>
+            <code>
+                #box {
+                    width: 200px;
+                    height: 20px;
+                    border: solid 1px black;
+                    border-radius: 5px;
+                    background-image: linear-gradient(to right, blue, red);
+                }
+            </code>
+        </pre>
+        <p>Esse foi um exemplo mais simples possível para se ter uma idéia de como inserir um efeito gradiente em nossas páginas.</p>
+    </main>
+</body>
+</html>
